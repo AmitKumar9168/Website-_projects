@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/addstudent.css">
+	<title>TAE</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text">TAE</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="addstudent.html">
+					<i class='bx bxs-calendar-star'></i>
+					<span class="text">Students</span>
+				</a>
+			</li>
+			<li>
+				<a href="reports.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Report</span>
+				</a>
+			</li>
+			<li>
+				<a href="timetable.html">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Balance fee</span>
+				</a>
+			</li>
+			<li>
+				<a href="leaves.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Staff</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="students.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Mail</span>
+				</a>
+			</li>
+			<li>
+				<a href="feedback.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+		
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+
+
+			<div class="intro">
+				<h2>Trinity Academy of Engineering</h2>
+			</div>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+			<a href="#" class="profile" >
+				<p>User:<i>Admin</i> </p>	<img src="/assets/img/user.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Academics</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Academics</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Attendance</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="green.html">Students_info</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h2>Add Students : </h2>
+				<div class="container">
+					<form action="/submit_form" method="post">
+						<div class="row">
+							<div class="column">
+								<label for="load_type"> Name :</label>
+								<input type="text" name="name" id="name">
+								
+							</div>
+							<div class="column">
+								<label for="year"> E-mail ID:</label>
+								<input type="text" id="year" name="year">
+							</div>
+							<div class="column">
+								<label for="course">Contact Number:</label>
+								<input type="number"  name="contact" id="contact">
+								
+							</div>
+							<br>
+							<br>
+							
+						</div>
+						
+
+						<div class="row">
+							<div class="column">
+								<label for="div">Course:</label>
+								<select id="division" name="division" required>
+									<option value=""> C Programming</option>
+									<option value="A">C++ Programming</option>
+									<option value="B">Java Programming</option>
+									<option value="C">Python Programming</option>
+									<option value="E">Front-end Web Development</option>
+									<option value="E">Back-end Web Development</option>
+									<option value="E">Full Stack Web Development</option>
+									<option value="E">React js</option>
+									<option value="F">Django</option>
+									<option value="E">Angular</option>
+									<option value="D">SQL</option>
+									<option value="all">All</option>
+								</select>
+							</div>
+							
+							<div class="column">
+								<label for="batch">Total Fees:</label>
+								<input type="text" name="" id="">
+							</div>
+							<div class="column">
+								<label for="batch">Date of joining: </label>
+								<input type="date" name="date" id="date">
+							</div>
+							<div class="column">
+								<label for="batch"> Paid:</label>
+								<input type="text" name="" id="">
+							</div>
+							<div class="column">
+								<label for="batch">Balance: </label>
+								<input type="text" name="" id="">
+							</div>
+							<div class="column">
+								<label for="batch">Transaction Id:</label>
+								<input type="text" name="" id="">
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="column">
+								<label for="from_time"> Duration </label>
+								<select id="from_time" name="from_time">
+									<option value="">Months</option>
+									<option value="09:15 am">1 months</option>
+									<option value="10:15 am">2 months</option>
+									<option value="12:00 pm">3 months</option>
+									<option value="01:00 pm">4 months</option>
+									<option value="02:15 pm">5 months</option>
+									<option value="03:15 pm">6 months</option>
+								</select>
+							</div>
+							
+							<div class="column">
+								<label for="from_time">From:</label>
+								<select id="from_time" name="from_time">
+									<option value="">Select Time</option>
+									<option value="09:15 am">10:00 am</option>
+									<option value="10:15 am">11:30 am</option>
+									<option value="12:00 pm">1:00 pm</option>
+									<option value="01:00 pm">3:30 pm</option>
+									<option value="02:15 pm">5:00 pm</option>
+									<option value="03:15 pm">06:30 pm</option>
+								</select>
+							</div>
+							
+							<div class="column">
+								<label for="to_time">To:</label>
+								<select id="to_time" name="to_time">
+									<option value="">Select Time</option>
+									<option value="10:15 am">11:30 am</option>
+									<option value="11:15 am">1:00 pm</option>
+									<option value="01:00 pm">02:30 pm</option>
+									<option value="02:00 pm">05:00 pm</option>
+									<option value="03:15 pm">06:30 pm</option>
+									<option value="04:15 pm">08:00 pm</option>
+								</select>
+							</div>
+							
+						</div>     
+						    
+					</form>
+		  
+			</div>
+				<button type="submit" class="attendance-button">Add Student</button>
+			</div>
+			
+	</section>
+
+	</main>
+
+	</section>
+	
+	
+	<script src="assets/script/fees.js"></script>
+	<script src="assets/script/script.js"></script>
+	<script src="script.js"></script>
+	<script>
+       
+    </script>
+		
+
+</body>
+
+</html>
