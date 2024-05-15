@@ -10,7 +10,7 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="assets/style/style.css">
 	<link rel="stylesheet" href="assets/style/report.css">
-	<link rel="stylesheet" href="assets/style/popup.css">
+	<link rel="stylesheet" href="assets/style/reportform.css">
 
 	<title>TAE</title>
 </head>
@@ -21,10 +21,10 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text">TAE</span>
+			<span class="text"><img src="/assets/img/newyear.png" height="100px"alt=""></span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li >
 				<a href="index.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
@@ -37,7 +37,7 @@
 				</a>
 				<div w3-include-html="index.html"></div>
 			</li>
-			<li>
+			<li class="active">
 				<a href="reports.html">
 					<i class='bx bxs-doughnut-chart'></i>
 					<span class="text">Report</span>
@@ -52,21 +52,21 @@
 			<li>
 				<a href="leaves.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Staff</span>
+					<span class="text">Expense</span>
 				</a>
 			</li>
 
 			<li>
 				<a href="students.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Mail</span>
+					<span class="text">Certificate</span>
 				</a>
 			</li>
 			<li>
-				<a href="feedback.html">
+				<!-- <a href="feedback.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Feedback</span>
-				</a>
+				</a> -->
 			</li>
 		</ul>
 		<ul class="side-menu">
@@ -97,7 +97,7 @@
 
 
 			<div class="intro">
-				<h2>Trinity Academy of Engineering</h2>
+				<h2>DigitalByte Tech Academy</h2>
 			</div>
 			<form action="#">
 				<div class="form-input">
@@ -120,82 +120,203 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Academics</h1>
+					<h1>Student Report</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Academics</a>
+							<a href="#">Student report</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="#">Attendance</a>
+							<a class="active" href="#">Overall</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Details</a>
+						</li>
 						
 					</ul>
 				</div>
 			</div>
 			<div class="card">
 
-				<h2>Students Report</h2>
+				
+				<div class="card" >
+					<form action="" class="searchForm">
+						<label for="name">Name</label> <input type="text" name="" id="">
+						<label for="name">E-mail</label> <input type="text" name="" id="">
+						<label for="name">Course</label> <input type="text" name="" id="">
+						<button type="submit" class="submit">Submit</button>
+					</form>
+					<section class="main-course">
+					 <table class="content-table">
+							<thead>
+							  <tr>
+								<th>Sr. no.</th>
+								<th>Name</th>
+								<th>E-mail</th>
+								<th>Contact</th>
+								<th>Course</th>
+								<th>DOJ</th>
+								<th>Total fees</th>
+								<th>Paid fees</th>
+								<th>Balance</th>
+								<th>Transaction_id</th>
+								<th>Duration</th>
+								<th>Time from</th>
+								<th>Time to</th>
+								<!-- <th>Time to</th> -->
+								<th>Print</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>Present Absent</td>
+								<td>Present Absent</td>
+								<td>Present Absent
+								<td>Present Absent</td>
+								<td>12/09/2024</td>
+								<td>10,000</td>
+								<td>10,000</td>
+								<td>000</td>
+								<td>000</td>
+								<td>4months</td>
+								<td>xyzabc</td>
+								<td>xyzabc</td>
+								<td><a href="#" class="view" id="printButton">Print</a></td>
+							  </tr>
 
-				<div class="card">
-
-
-
-					<table>
-						<tr>
-							<th>Sr No.</th>
-							<th>Name</th>
-							<th>Email</th>
-							<th>Contact</th>
-							<th>Course</th>
-							<th>Total Fees</th>
-							<th>Balance Fees</th>
-							<th>Fees Remark</th>
-							<th>DOJ</th>
-							<th>Dur<br></th>
-							<th>Timing from</th>
-							<th>Timing to</th>
-							<th>  <span>View</span> </th>
-							<!-- <th id="view">  View</th> -->
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>
-								Present Present
-							</td>
-							<td>Second Year</td>
-							<td>Second Year</td>
-							<td>Second Year</td>
-							<td>Second Year</td>
-							<td>Second Year</td>
-							<td>4</td>
-							<td>4</td>
-							<td>4</td>
-							<td>10:00 am</td>
-							<td>11:30 am</td>
-							<td > <a href="#" class="view" id="printButton">Print</a></td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>
-								Present Absent
-							</td>
-							<td>Third Year</td>
-							<td>Third Year</td>
-							<td>Third Year</td>
-							<td>Third Year</td>
-							<td>Third Year</td>
-							<td>2</td>
-							<td>2</td>
-							<td>2</td>
-							<td>10:00 am</td>
-							<td>11:30 am</td>
-							<!-- <td>  View  </td> -->
-							<td > <a href="#" class="view" id="printButton">Print</a></td>
-						</tr>
-						
-					</table>
+							</tbody>
+						  </table> 
+					  </section>
 
 				</div>
 			</div>

@@ -66,7 +66,7 @@ body {
 }
 #sidebar .side-menu {
 	width: 100%;
-	margin-top: 48px;
+	padding-top: 48px;
 }
 #sidebar .side-menu li {
 	height: 48px;
@@ -89,6 +89,11 @@ body {
 }
 #sidebar .side-menu.top li.active a {
 	color: #3C91E6;
+}
+
+#sidebar span img{
+	height: 85px;
+	margin-top: 47px;
 }
 #sidebar.hide .side-menu li a {
 	width: calc(48px - (4px * 2));
@@ -315,6 +320,16 @@ body {
 	font-weight: 600;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  outline: grey; /* Remove the default outline */
+}
+button:focus {
+    outline: grey; /* Remove the default outline */
+  }
+
 
 #content main .box-info {
 	display: grid;
@@ -355,7 +370,7 @@ body {
 	gap:10px;
 }
 .announce .info .fas{
-	font-size: 22px;
+	font-size: 14px;
 	background-color: #00c8ff4f;
 	padding: 5px;
 	border-radius: 5px; 
@@ -403,7 +418,19 @@ body {
 #aca{
 	display: none;
 }
-
+@media screen and (max-width: 1268px){
+	.intro h2{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1000px){
+	main{
+		display: none;
+	}
+	#sidebar,#content{
+		display: none;
+	}	
+}
 
 
 @media screen and (max-width: 768px) {
@@ -419,6 +446,12 @@ body {
 	#content nav .nav-link {
 		display: none;
 	}
+	main{
+		display: none;
+	}
+	#sidebar,#content{
+		display: none;
+	}	
 }
 
 
@@ -469,4 +502,12 @@ body {
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
 	}
+	main{
+		display: none;
+	}
+	#sidebar,#content{
+		display: none;
+	}	
+
+
 }

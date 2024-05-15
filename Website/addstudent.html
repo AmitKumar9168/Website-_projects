@@ -19,16 +19,16 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text">TAE</span>
+			<span class="text"><img src="/assets/img/newyear.png" height="100px"alt=""></span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li >
 				<a href="index.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="addstudent.html">
 					<i class='bx bxs-calendar-star'></i>
 					<span class="text">Students</span>
@@ -49,21 +49,21 @@
 			<li>
 				<a href="leaves.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Staff</span>
+					<span class="text">Expense</span>
 				</a>
 			</li>
 
 			<li>
 				<a href="students.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Mail</span>
+					<span class="text">Certificate</span>
 				</a>
 			</li>
 			<li>
-				<a href="feedback.html">
+				<!-- <a href="feedback.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Feedback</span>
-				</a>
+				</a> -->
 			</li>
 		</ul>
 		<ul class="side-menu">
@@ -94,7 +94,8 @@
 
 
 			<div class="intro">
-				<h2>Trinity Academy of Engineering</h2>
+				<h2>DigitalByte Tech Academy
+				</h2>
 			</div>
 			<form action="#">
 				<div class="form-input">
@@ -108,7 +109,7 @@
 			</a>
 
 			<a href="#" class="profile" >
-				<p>User:<i>Admin</i> </p>	<img src="/assets/img/user.png">
+				<p>User:<i>Admin</i> </p>	<img src="/assets/img/code.png">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -124,7 +125,7 @@
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
-							<a class="active" href="#">Attendance</a>
+							<a class="active" href="#">Add student</a>
 						</li>
 						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
@@ -140,16 +141,16 @@
 						<div class="row">
 							<div class="column">
 								<label for="load_type"> Name :</label>
-								<input type="text" name="name" id="name">
+								<input type="text" name="name" id="name" required>
 								
 							</div>
 							<div class="column">
 								<label for="year"> E-mail ID:</label>
-								<input type="text" id="year" name="year">
+								<input type="text" id="year" name="year" required>
 							</div>
 							<div class="column">
 								<label for="course">Contact Number:</label>
-								<input type="number"  name="contact" id="contact">
+								<input type="number"  name="contact" id="contact" required>
 								
 							</div>
 							<br>
@@ -177,32 +178,34 @@
 								</select>
 							</div>
 							
-							<div class="column">
-								<label for="batch">Total Fees:</label>
-								<input type="text" name="" id="">
-							</div>
+							
 							<div class="column">
 								<label for="batch">Date of joining: </label>
-								<input type="date" name="date" id="date">
+								<input type="date" name="date" id="date" required>
+							</div>
+							<div class="column">
+								<label for="batch">Total Fees:</label>
+								<input type="number" name="" id="" required>
 							</div>
 							<div class="column">
 								<label for="batch"> Paid:</label>
-								<input type="text" name="" id="">
+								<input type="number" name="" id="" required>
 							</div>
 							<div class="column">
 								<label for="batch">Balance: </label>
-								<input type="text" name="" id="">
+								<input type="number" name="" id="" required>
 							</div>
+							
 							<div class="column">
 								<label for="batch">Transaction Id:</label>
-								<input type="text" name="" id="">
+								<input type="text" name="" id="" required>
 							</div>
 							
 						</div>
 						<div class="row">
 							<div class="column">
 								<label for="from_time"> Duration </label>
-								<select id="from_time" name="from_time">
+								<select id="from_time" name="from_time" required>
 									<option value="">Months</option>
 									<option value="09:15 am">1 months</option>
 									<option value="10:15 am">2 months</option>
@@ -215,7 +218,7 @@
 							
 							<div class="column">
 								<label for="from_time">From:</label>
-								<select id="from_time" name="from_time">
+								<select id="from_time" name="from_time" required>
 									<option value="">Select Time</option>
 									<option value="09:15 am">10:00 am</option>
 									<option value="10:15 am">11:30 am</option>
@@ -228,7 +231,7 @@
 							
 							<div class="column">
 								<label for="to_time">To:</label>
-								<select id="to_time" name="to_time">
+								<select id="to_time" name="to_time" required>
 									<option value="">Select Time</option>
 									<option value="10:15 am">11:30 am</option>
 									<option value="11:15 am">1:00 pm</option>
@@ -239,12 +242,12 @@
 								</select>
 							</div>
 							
-						</div>     
+						</div>     <button type="submit" class="attendance-button"> Add Student</button>
 						    
 					</form>
 		  
 			</div>
-				<button type="submit" class="attendance-button">Add Student</button>
+				
 			</div>
 			
 	</section>

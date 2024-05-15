@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="assets/style/style.css">
+	<script src="assets/script/search.js"></script>
 	<link rel="stylesheet" href="assets/style/progressbar.css">
 	<title>TAE</title>
 </head>
@@ -20,7 +21,7 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<span class="text"><img src="/assets/img/newyear.png" height="100px"alt=""></span>
+			<span class="text"><img src="/assets/img/logo.png"alt=""></span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -50,21 +51,21 @@
 			<li>
 				<a href="leaves.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Staff</span>
+					<span class="text">Expense</span>
 				</a>
 			</li>
 
 			<li>
 				<a href="students.html">
 					<i class='bx bxs-group'></i>
-					<span class="text">Mail</span>
+					<span class="text">Certificate</span>
 				</a>
 			</li>
 			<li>
-				<a href="feedback.html">
+				<!-- <a href="feedback.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Feedback</span>
-				</a>
+				</a> -->
 			</li>
 		</ul>
 		<ul class="side-menu">
@@ -94,11 +95,11 @@
 
 
 			<div class="intro">
-				<h2>DigitalByte Tech Academy</h2>
+				<h2>DigitaLogic_Code.in</h2>
 			</div>
-			<form action="#">
+			<form id="searchForm">
 				<div class="form-input">
-					<input type="search" placeholder="Search...">
+					<input id="searchInput" type="search" placeholder="Search...">
 					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
 				</div>
 			</form>
@@ -140,7 +141,7 @@
 					</p>
 					
 						<div>
-							<p class="total" style="font-size: 12px; font-weight: 600;">Total Student: 100</p>
+							<p class="total" style="font-size: 12px; font-weight: 600;">Total Student: 1000</p>
 
 						</div>
 					
@@ -166,10 +167,10 @@
 
 					<div class="icons">
 						<div class="count" style="background-color: rgba(5, 255, 5, 0.358);color:green ;">
-							<h3>8 <br> Present</h3>
+							<h3>8<br> Present</h3>
 						</div>
 						<div class="count" style="background-color: rgba(255, 77, 0, 0.406);color:rgb(110, 4, 4) ;">
-							<h3>8 <br> Absent
+							<h3>0<br> Absent
 							</h3>
 						</div>
 						<div class="count" style="background-color: rgba(0, 191, 255, 0.596);color: blue;">
@@ -186,9 +187,9 @@
 					</p>
 					<div class="details">
 						<div class="info">
-							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
+							<div class="user"><img src="/assets/img/user.png" alt="">AmitKumar Kishor Das</div>
 
-							<div class="date">C/C++</div>
+							<div class="date">C/Java/Web</div>
 						</div>
 						<div class="info">
 							<div class="user"><img src="/assets/img/user.png" alt=""> Bhupendra Jogi</div>
@@ -214,53 +215,63 @@
 					</div>
 				</li>
 				<li>
-					<p class="title">Announcements <i class="fa-solid  fa-triangle-exclamation fa-fade"></i>
+					<p class="title">Batches <i class="fa-solid  fa-triangle-exclamation fa-fade"></i>
 						<hr>
 					</p>
 
 					<div class="announce">
 
 						<div class="info">
-							<div class="user"> <i class='fas fa-bell'></i> Staff Meeting</div>
+							<div class="user"> <i class='fas fa-bell'></i>C Programming</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> Seminar in seminar hall </div>
+							<div class="user"><i class='fas fa-bell'></i>C++ Programming</div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> Internship review </div>
+							<div class="user"><i class='fas fa-bell'></i> DSA </div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> New joining</div>
+							<div class="user"><i class='fas fa-bell'></i> Python </div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> Unit test dates</div>
+							<div class="user"><i class='fas fa-bell'></i> Java Prog. </div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> Unit test dates</div>
+							<div class="user"><i class='fas fa-bell'></i> Web Development </div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
 						<div class="info">
-							<div class="user"><i class='fas fa-bell'></i> Unit test dates</div>
+							<div class="user"><i class='fas fa-bell'></i> Django </div>
 
 							<p class="date">10 <sup>th</sup>April 2024 </p>
 						</div>
+						<div class="info">
+							<div class="user"><i class='fas fa-bell'></i> React </div>
+
+							<p class="date">10 <sup>th</sup>April 2024 </p>
+						</div>
+						<!-- <div class="info">
+							<div class="user"><i class='fas fa-bell'></i> Angular </div>
+
+							<p class="date">10 <sup>th</sup>April 2024 </p>
+						</div> -->
 
 					</div>
 
 				</li>
 				<li>
-					<p class="title">  Today's Collection: 
+					<p class="title">  Daily Record: 
 
 						<hr>
 					</p>
@@ -274,6 +285,12 @@
 
 							Amount collected:<span ><h2 >27000</h2></span>
 						</div>
+						<br>
+						<div class="collection">
+
+							Balance:<span ><h2 >27000</h2></span>
+						</div>
+						
 					</div>
 					
 				</li>
@@ -289,6 +306,11 @@
 
 						Amount collected:<span ><h2 >27000</h2></span>
 					</div>
+					<br>
+						<div class="collection">
+
+							Balance:<span ><h2 >27000</h2></span>
+						</div>
 					
 				</li>
 				<li>
@@ -303,6 +325,11 @@
 
 						Amount collected:<span ><h2 >890000</h2></span>
 					</div>
+					<br>
+						<div class="collection">
+
+							Balance:<span ><h2 >27000</h2></span>
+						</div>
 					
 				</li>
 				
@@ -318,7 +345,6 @@
 
 	<script src="assets/script/script.js"></script>
 	<script src="script.js"></script>
-	
 </body>
 
 </html>
