@@ -147,7 +147,7 @@ ul li {
 ul li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-section{
+.tansaction{
   padding-top: 14px;
 }
 
@@ -210,7 +210,7 @@ ul li:hover .action {
 }
 
 .transaction-section {
-    height: 300px; /* Set your desired fixed height */
+    height: 450px; /* Set your desired fixed height */
 
   }
   
