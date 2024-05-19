@@ -383,16 +383,8 @@ button:focus {
 .monthly{
 	width: 316%;
 }
-.add{
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.add span{
-	padding-left: 10px;
 
-}
+
 .info .user{
 	display: flex; 
 	align-items: center;
