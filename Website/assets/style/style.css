@@ -380,7 +380,19 @@ button:focus {
 .announce .info p{
 	font-size: 10px;
 }
+.monthly{
+	width: 316%;
+}
+.add{
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.add span{
+	padding-left: 10px;
 
+}
 .info .user{
 	display: flex; 
 	align-items: center;
@@ -418,6 +430,7 @@ button:focus {
 #aca{
 	display: none;
 }
+
 @media screen and (max-width: 1268px){
 	.intro h2{
 		font-size: 18px;
