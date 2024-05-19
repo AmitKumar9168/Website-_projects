@@ -15,6 +15,12 @@ const expense = document.getElementById("income");
 
 form.addEventListener("submit", addTransaction);
 
+
+document.querySelector('.download').addEventListener('click', function(event) {
+  event.preventDefault();
+  downloadTransactions();
+});
+
 function updateTotal() {
   const incomeTotal = transactions
     .filter((trx) => trx.type === "expense")
@@ -106,6 +112,48 @@ function saveTransactions() {
 
   localStorage.setItem("transactions", JSON.stringify(transactions));
 }
+
+
+
+
+function downloadTransactions() {
+  const data = transactions.map(trx => ({
+    Date: new Date(trx.date).toLocaleDateString(),
+    Name: trx.name,
+    Amount: trx.amount,
+    Type: trx.type
+  }));
+
+  const worksheet = XLSX.utils.json_to_sheet(data);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Transactions");
+
+  const wbout = XLSX.write(workbook, { bookType: 'xlsx', type: 'binary' });
+
+  function s2ab(s) {
+    const buf = new ArrayBuffer(s.length);
+    const view = new Uint8Array(buf);
+    for (let i = 0; i < s.length; i++) {
+      view[i] = s.charCodeAt(i) & 0xFF;
+    }
+    return buf;
+  }
+
+  const blob = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'transactions.xlsx';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+renderList();
+updateTotal();
+
 
 
 
