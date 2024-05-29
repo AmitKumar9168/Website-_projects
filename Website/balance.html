@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/balance.css">
+	<!-- <link rel="stylesheet" href="assets/style/certificate.css"> -->
+	<title>Data-Flow Tech Academy</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text"><img src="./assets/img/logo.png"alt=""></span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="addstudent.html">
+					<i class='bx bxs-user'></i>
+					<span class="text">Students</span>
+				</a>
+			</li>
+			<li>
+				<a href="reports.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Report</span>
+				</a>
+			</li>
+			<li class="active"> 
+				<a href="balance.html">
+					<i class='bx bxs-credit-card'></i>
+					<span class="text">Balance fee</span>
+				</a>
+			</li>
+			<li>
+				<a href="expense.html">
+					<i class='bx bxs-dollar-circle'></i>
+					<span class="text">Expense</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="certificate.html">
+					<i class='bx bxs-graduation'></i>
+					<span class="text">Certificate</span>
+				</a>
+			</li>
+			<li>
+				<!-- <a href="feedback.html">
+					<i class='bx bxs-group'></i>
+					<span class="text">Feedback</span>
+				</a> -->
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+
+
+			<div class="intro">
+				<h2>Data-Flow Tech Academy</h2>
+			</div>
+			<form id="searchForm">
+				<div class="form-input">
+					<input id="searchInput" type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+			<a href="#" class="profile" >
+				<p>User:<i>Admin</i> </p>	<img src="./assets/img/user.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Balance</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Balance</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Take fees</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+        
+        
+                <div class="transaction">
+                    <div class="list">
+						<div class="head">
+							<h3>Distribution</h3>
+							<form action="#" id="ballist">
+								<input type="search" name="search" id="search" placeholder="Search a name" required>
+								<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+							</form>
+						</div>
+						<hr>
+						<h5>Total : 20</h5>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Total-Fees</th>
+                <th>Paid</th>
+                <th>Balance</th>
+                <th>Take-Fees</th>
+            </tr>
+        </thead>
+        <tbody id="distribution-table">
+            <tr>
+                <td>John Doe</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>500</td>
+                <td>Take</td>
+            </tr>
+			<tr>
+                <td>John Doe</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>500</td>
+                <td>Take</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>2000</td>
+                <td>1500</td>
+                <td>500</td>
+                <td>Take</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>3000</td>
+                <td>2500</td>
+                <td>500</td>
+                <td>Take</td>
+            </tr>
+            <!-- More rows as needed -->
+        </tbody>
+    </table>
+					</div>
+					
+                    <div class="updated">
+							<div class="title">Registration</div>
+							<div class="content">
+							  <form action="#">
+								<div class="user-details">
+								  <div class="input-box">
+									<span class="details">Full Name</span>
+									<input type="text" placeholder="Enter your name" required>
+								  </div>
+								  
+								  <div class="input-box">
+									<span class="details">Email</span>
+									<input type="text" placeholder="Enter your email" required>
+								  </div>
+								  <div class="input-box">
+									<span class="details">Phone Number</span>
+									<input type="text" placeholder="Enter your number" required>
+								  </div>
+								  <div class="input-box">
+									<span class="details">Total Fees</span>
+									<input type="text" placeholder="Total Fees" required>
+								  </div>
+								  <div class="input-box">
+									<span class="details">Balance Fees</span>
+									<input type="text" placeholder="Balace Fees" required>
+								  </div>
+								  <div class="input-box">
+									<span class="details">Pay</span>
+									<input type="text" placeholder="Amount going to paying" required>
+								  </div>
+								  <div class="input-box">
+									<span class="details">Transaction ID</span>
+									<input type="text" placeholder="Transaction Id" required>
+								  </div>
+								</div>
+								
+								<div class="button">
+								  <input type="submit" value="Update">
+								</div>
+							  </form>
+							</div>
+						  </div>
+
+
+
+
+					</div>
+
+             
+
+
+		
+		</main>
+		<!-- MAIN -->
+
+	</section>
+	
+
+	<script src="assets/script/script.js"></script>
+	<script src="assets/script/rowcount.js"></script>
+	<script src="assets/script/balancesearch.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

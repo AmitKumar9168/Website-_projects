@@ -113,9 +113,6 @@ function saveTransactions() {
   localStorage.setItem("transactions", JSON.stringify(transactions));
 }
 
-
-
-
 function downloadTransactions() {
   const data = transactions.map(trx => ({
     Date: new Date(trx.date).toLocaleDateString(),
@@ -139,7 +136,7 @@ function downloadTransactions() {
     return buf;
   }
 
-  const blob = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
+  const blob = new Blob([s2ab(wbout)], {type: 'application/octet-stream' });
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement('a');
@@ -153,11 +150,3 @@ function downloadTransactions() {
 
 renderList();
 updateTotal();
-
-
-
-
-
-
-
-

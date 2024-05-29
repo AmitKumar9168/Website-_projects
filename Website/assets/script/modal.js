@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Get all elements with class "view"
     var printLinks = document.querySelectorAll(".view");
-    
+
     // Add event listener to each "Print" link
     printLinks.forEach(function(link) {
         link.addEventListener("click", function(event) {
@@ -10,28 +10,27 @@ document.addEventListener("DOMContentLoaded", function() {
             // Get the row data
             var rowData = [];
             var row = this.parentNode.parentNode;
-            row.querySelectorAll("th, td").forEach(function(cell, index) {
-                // Exclude the last column
-                if (index !== row.querySelectorAll("th, td").length - 1) {
-                    rowData.push(cell.textContent);
-                }
+            row.querySelectorAll("td").forEach(function(cell) {
+                rowData.push(cell.textContent);
             });
 
             // Get the table headings
             var headings = [];
-            row.parentNode.querySelectorAll("th").forEach(function(heading, index) {
-                // Exclude the last heading
-                if (index !== row.parentNode.querySelectorAll("th").length - 1) {
+            var headingCells = row.parentNode.parentNode.querySelectorAll("th");
+            headingCells.forEach(function(heading, index) {
+                // Exclude the last heading (Print column)
+                if (index !== headingCells.length - 1) {
                     headings.push(heading.textContent);
                 }
             });
 
-            // Construct printable HTML content with colspan 2 for each row, font size 23px, and box table styling
-            var printableContent = "<style>table { border-collapse: collapse; width: 100%; } th, td { border: 1px solid black; padding: 8px; } th { text-align: left; }</style><table>";
-            for (var i = 0; i < rowData.length; i++) {
-                printableContent += "<tr><th>" + headings[i] + "</th><td colspan='2'>" + rowData[i] + "</td></tr>";
+            // Construct printable HTML content with the specified format
+            var printableContent = "<style>body { font-family: Arial, sans-serif; } .print-container { width: 100%; max-width: 800px; margin: auto; } .print-container h2 { text-align: center; margin-bottom: 20px; } .print-container div.row { display: flex;justify-content:space-between; margin-bottom: 10px;margin-left:60px;gap:110px;} .print-container div.label { font-weight: bold; width: 20%; } .print-container div.value { width: 30%; }</style>";
+            printableContent += "<div class='print-container'><h2>Details</h2>";
+            for (var i = 0; i < rowData.length-1; i++) {
+                printableContent += "<div class='row'><div class='label'>" + headings[i] + ":</div><div class='value'>" + rowData[i] + "</div></div>";
             }
-            printableContent += "</table>";
+            printableContent += "</div>";
 
             // Create a hidden iframe to print the content
             var iframe = document.createElement('iframe');
@@ -39,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             iframe.style.width = '0';
             document.body.appendChild(iframe);
             var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-            iframeDocument.write('<html><head><title>Namaste Data-G</title></head><body>' + printableContent + '</body></html>');
-
+            iframeDocument.write('<html><head><title>Data-Flow Tech Academy</title></head><body>' + printableContent + '</body></html>');
             iframeDocument.close();
 
             // Print the content
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Remove the iframe
             document.body.removeChild(iframe);
-           
         });
     });
 });

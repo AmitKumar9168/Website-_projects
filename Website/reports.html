@@ -24,7 +24,7 @@
 			<span class="text"><img src="/assets/img/logo.png"alt=""></span>
 		</a>
 		<ul class="side-menu top">
-			<li >
+			<li>
 				<a href="index.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
@@ -32,10 +32,9 @@
 			</li>
 			<li>
 				<a href="addstudent.html">
-					<i class='bx bxs-calendar-star'></i>
+					<i class='bx bxs-user'></i>
 					<span class="text">Students</span>
 				</a>
-				<div w3-include-html="index.html"></div>
 			</li>
 			<li class="active">
 				<a href="reports.html">
@@ -43,22 +42,22 @@
 					<span class="text">Report</span>
 				</a>
 			</li>
-			<li>
-				<a href="timetable.html">
-					<i class='bx bxs-message-dots'></i>
+			<li> 
+				<a href="balance.html">
+					<i class='bx bxs-credit-card'></i>
 					<span class="text">Balance fee</span>
 				</a>
 			</li>
 			<li>
 				<a href="expense.html">
-					<i class='bx bxs-group'></i>
+					<i class='bx bxs-dollar-circle'></i>
 					<span class="text">Expense</span>
 				</a>
 			</li>
 
 			<li>
-				<a href="students.html">
-					<i class='bx bxs-group'></i>
+				<a href="certificate.html">
+					<i class='bx bxs-graduation'></i>
 					<span class="text">Certificate</span>
 				</a>
 			</li>
@@ -138,186 +137,472 @@
 				</div>
 			</div>
 			<div class="card">
-
-				
-				<div class="card" >
-					<form action="" class="searchForm">
-						<label for="name">Name</label> <input type="text" name="" id="">
-						<label for="name">E-mail</label> <input type="text" name="" id="">
-						<label for="name">Course</label> <input type="text" name="" id="">
+	
+				<div class="card">
+					<form action="" class="searchForm" id="searchForm">
+						<label for="name">Name</label> <input type="text" name="name" id="name">
+						<label for="email">E-mail</label> <input type="text" name="email" id="email">
+						<label for="course">Course</label> <input type="text" name="course" id="course">
 						<button type="submit" class="submit">Submit</button>
 					</form>
 					<section class="main-course">
-					 <table class="content-table">
+						<h5>Total : </h5>
+						<table class="content-table" id="contentTable">
 							<thead>
-							  <tr>
-								<th>Sr. no.</th>
-								<th>Name</th>
-								<th>E-mail</th>
-								<th>Contact</th>
-								<th>Course</th>
-								<th>DOJ</th>
-								<th>Total fees</th>
-								<th>Paid fees</th>
-								<th>Balance</th>
-								<th>Transaction_id</th>
-								<th>Duration</th>
-								<th>Time from</th>
-								<th>Time to</th>
-								<!-- <th>Time to</th> -->
-								<th>Print</th>
-							  </tr>
+								<tr>
+									<th>Sr. no.</th>
+									<th>Name</th>
+									<th>E-mail</th>
+									<th>Contact</th>
+									<th>Course</th>
+									<th>DOJ</th>
+									<th>Total fees</th>
+									<th>Paid fees</th>
+									<th>Balance</th>
+									<th>Transaction_id</th>
+									<th>Duration</th>
+									<th>Time from</th>
+									<th>Time to</th>
+									<th>Print</th>
+								</tr>
 							</thead>
 							<tbody>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-							  <tr>
-								<td>1</td>
-								<td>Present Absent</td>
-								<td>Present Absent</td>
-								<td>Present Absent
-								<td>Present Absent</td>
-								<td>12/09/2024</td>
-								<td>10,000</td>
-								<td>10,000</td>
-								<td>000</td>
-								<td>000</td>
-								<td>4months</td>
-								<td>xyzabc</td>
-								<td>xyzabc</td>
-								<td><a href="#" class="view" id="printButton">Print</a></td>
-							  </tr>
-
+								<tr>
+									<td>1</td>
+									<td>John Doe</td>
+									<td>johndoe@example.com</td>
+									<td>1234567890</td>
+									<td>Math</td>
+									<td>2023-01-01</td>
+									<td>1000</td>
+									<td>600</td>
+									<td>400</td>
+									<td>TX123456</td>
+									<td>6 months</td>
+									<td>10:00 AM</td>
+									<td>11:00 AM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jane Smith</td>
+									<td>janesmith@example.com</td>
+									<td>2345678901</td>
+									<td>Science</td>
+									<td>2023-02-01</td>
+									<td>1200</td>
+									<td>800</td>
+									<td>400</td>
+									<td>TX123457</td>
+									<td>6 months</td>
+									<td>11:00 AM</td>
+									<td>12:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Emily Johnson</td>
+									<td>emilyjohnson@example.com</td>
+									<td>3456789012</td>
+									<td>English</td>
+									<td>2023-03-01</td>
+									<td>1100</td>
+									<td>500</td>
+									<td>600</td>
+									<td>TX123458</td>
+									<td>6 months</td>
+									<td>12:00 PM</td>
+									<td>01:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Michael Brown</td>
+									<td>michaelbrown@example.com</td>
+									<td>4567890123</td>
+									<td>History</td>
+									<td>2023-04-01</td>
+									<td>1500</td>
+									<td>1000</td>
+									<td>500</td>
+									<td>TX123459</td>
+									<td>6 months</td>
+									<td>01:00 PM</td>
+									<td>02:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Jessica Davis</td>
+									<td>jessicadavis@example.com</td>
+									<td>5678901234</td>
+									<td>Geography</td>
+									<td>2023-05-01</td>
+									<td>1300</td>
+									<td>700</td>
+									<td>600</td>
+									<td>TX123460</td>
+									<td>6 months</td>
+									<td>02:00 PM</td>
+									<td>03:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>David Wilson</td>
+									<td>davidwilson@example.com</td>
+									<td>6789012345</td>
+									<td>Biology</td>
+									<td>2023-06-01</td>
+									<td>1400</td>
+									<td>900</td>
+									<td>500</td>
+									<td>TX123461</td>
+									<td>6 months</td>
+									<td>03:00 PM</td>
+									<td>04:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Laura Martin</td>
+									<td>lauramartin@example.com</td>
+									<td>7890123456</td>
+									<td>Chemistry</td>
+									<td>2023-07-01</td>
+									<td>1600</td>
+									<td>1100</td>
+									<td>500</td>
+									<td>TX123462</td>
+									<td>6 months</td>
+									<td>04:00 PM</td>
+									<td>05:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Chris Lee</td>
+									<td>chrislee@example.com</td>
+									<td>8901234567</td>
+									<td>Physics</td>
+									<td>2023-08-01</td>
+									<td>1700</td>
+									<td>1200</td>
+									<td>500</td>
+									<td>TX123463</td>
+									<td>6 months</td>
+									<td>05:00 PM</td>
+									<td>06:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Andrew Taylor</td>
+									<td>andrewtaylor@example.com</td>
+									<td>9012345678</td>
+									<td>Computer Science</td>
+									<td>2023-09-01</td>
+									<td>1800</td>
+									<td>1300</td>
+									<td>500</td>
+									<td>TX123464</td>
+									<td>6 months</td>
+									<td>06:00 PM</td>
+									<td>07:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Anna White</td>
+									<td>annawhite@example.com</td>
+									<td>0123456789</td>
+									<td>Mathematics</td>
+									<td>2023-10-01</td>
+									<td>1900</td>
+									<td>1400</td>
+									<td>500</td>
+									<td>TX123465</td>
+									<td>6 months</td>
+									<td>07:00 PM</td>
+									<td>08:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Matthew Harris</td>
+									<td>matthewharris@example.com</td>
+									<td>1234567890</td>
+									<td>Statistics</td>
+									<td>2023-11-01</td>
+									<td>2000</td>
+									<td>1500</td>
+									<td>500</td>
+									<td>TX123466</td>
+									<td>6 months</td>
+									<td>08:00 PM</td>
+									<td>09:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Olivia King</td>
+									<td>oliviaking@example.com</td>
+									<td>2345678901</td>
+									<td>Economics</td>
+									<td>2023-12-01</td>
+									<td>2100</td>
+									<td>1600</td>
+									<td>500</td>
+									<td>TX123467</td>
+									<td>6 months</td>
+									<td>09:00 AM</td>
+									<td>10:00 AM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>Isabella Allen</td>
+									<td>isabellaallen@example.com</td>
+									<td>3456789012</td>
+									<td>Philosophy</td>
+									<td>2023-01-15</td>
+									<td>1000</td>
+									<td>600</td>
+									<td>400</td>
+									<td>TX123468</td>
+									<td>6 months</td>
+									<td>10:00 AM</td>
+									<td>11:00 AM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>James Scott</td>
+									<td>jamesscott@example.com</td>
+									<td>4567890123</td>
+									<td>Literature</td>
+									<td>2023-02-15</td>
+									<td>1200</td>
+									<td>800</td>
+									<td>400</td>
+									<td>TX123469</td>
+									<td>6 months</td>
+									<td>11:00 AM</td>
+									<td>12:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>Ava Martinez</td>
+									<td>avamartinez@example.com</td>
+									<td>5678901234</td>
+									<td>Art</td>
+									<td>2023-03-15</td>
+									<td>1100</td>
+									<td>500</td>
+									<td>600</td>
+									<td>TX123470</td>
+									<td>6 months</td>
+									<td>12:00 PM</td>
+									<td>01:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>16</td>
+									<td>Sophia Adams</td>
+									<td>sophiaadams@example.com</td>
+									<td>6789012345</td>
+									<td>Music</td>
+									<td>2023-04-15</td>
+									<td>1500</td>
+									<td>1000</td>
+									<td>500</td>
+									<td>TX123471</td>
+									<td>6 months</td>
+									<td>01:00 PM</td>
+									<td>02:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>William Nelson</td>
+									<td>williamnelson@example.com</td>
+									<td>7890123456</td>
+									<td>Engineering</td>
+									<td>2023-05-15</td>
+									<td>1300</td>
+									<td>700</td>
+									<td>600</td>
+									<td>TX123472</td>
+									<td>6 months</td>
+									<td>02:00 PM</td>
+									<td>03:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>Emma Harris</td>
+									<td>emma harris@example.com</td>
+									<td>8901234567</td>
+									<td>Astronomy</td>
+									<td>2023-06-15</td>
+									<td>1400</td>
+									<td>900</td>
+									<td>500</td>
+									<td>TX123473</td>
+									<td>6 months</td>
+									<td>03:00 PM</td>
+									<td>04:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>Henry Johnson</td>
+									<td>henryjohnson@example.com</td>
+									<td>9012345678</td>
+									<td>Botany</td>
+									<td>2023-07-15</td>
+									<td>1600</td>
+									<td>1100</td>
+									<td>500</td>
+									<td>TX123474</td>
+									<td>6 months</td>
+									<td>04:00 PM</td>
+									<td>05:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>Lucas Lee</td>
+									<td>lucaslee@example.com</td>
+									<td>0123456789</td>
+									<td>Zoology</td>
+									<td>2023-08-15</td>
+									<td>1700</td>
+									<td>1200</td>
+									<td>500</td>
+									<td>TX123475</td>
+									<td>6 months</td>
+									<td>05:00 PM</td>
+									<td>06:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>21</td>
+									<td>Chloe Davis</td>
+									<td>chloedavis@example.com</td>
+									<td>1234567890</td>
+									<td>Geology</td>
+									<td>2023-09-15</td>
+									<td>1800</td>
+									<td>1300</td>
+									<td>500</td>
+									<td>TX123476</td>
+									<td>6 months</td>
+									<td>06:00 PM</td>
+									<td>07:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>22</td>
+									<td>Daniel Brown</td>
+									<td>danielbrown@example.com</td>
+									<td>2345678901</td>
+									<td>Microbiology</td>
+									<td>2023-10-15</td>
+									<td>1900</td>
+									<td>1400</td>
+									<td>500</td>
+									<td>TX123477</td>
+									<td>6 months</td>
+									<td>07:00 PM</td>
+									<td>08:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>23</td>
+									<td>Lily Wilson</td>
+									<td>lilywilson@example.com</td>
+									<td>3456789012</td>
+									<td>Environmental Science</td>
+									<td>2023-11-15</td>
+									<td>2000</td>
+									<td>1500</td>
+									<td>500</td>
+									<td>TX123478</td>
+									<td>6 months</td>
+									<td>08:00 PM</td>
+									<td>09:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>24</td>
+									<td>Jack Thomas</td>
+									<td>jackthomas@example.com</td>
+									<td>4567890123</td>
+									<td>Psychology</td>
+									<td>2023-12-15</td>
+									<td>2100</td>
+									<td>1600</td>
+									<td>500</td>
+									<td>TX123479</td>
+									<td>6 months</td>
+									<td>09:00 AM</td>
+									<td>10:00 AM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>25</td>
+									<td>Amelia Clark</td>
+									<td>ameliaclarck@example.com</td>
+									<td>5678901234</td>
+									<td>Anthropology</td>
+									<td>2024-01-15</td>
+									<td>2200</td>
+									<td>1700</td>
+									<td>500</td>
+									<td>TX123480</td>
+									<td>6 months</td>
+									<td>10:00 AM</td>
+									<td>11:00 AM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>26</td>
+									<td>Benjamin Rodriguez</td>
+									<td>benjaminrodriguez@example.com</td>
+									<td>6789012345</td>
+									<td>Political Science</td>
+									<td>2024-02-15</td>
+									<td>2300</td>
+									<td>1800</td>
+									<td>500</td>
+									<td>TX123481</td>
+									<td>6 months</td>
+									<td>11:00 AM</td>
+									<td>12:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
+								<tr>
+									<td>27</td>
+									<td>Charlotte Hernandez</td>
+									<td>charlottehernandez@example.com</td>
+									<td>7890123456</td>
+									<td>Sociology</td>
+									<td>2024-03-15</td>
+									<td>2400</td>
+									<td>1900</td>
+									<td>500</td>
+									<td>TX123482</td>
+									<td>6 months</td>
+									<td>12:00 PM</td>
+									<td>01:00 PM</td>
+									<td><a href="#" class="view" id="printButton">Print</a></td>
+								</tr>
 							</tbody>
-						  </table> 
-					  </section>
-
+						</table>
+						<a href="" style="padding-left: 12px; color: blue; font-style: italic;">Download</a>
+					</section>
 				</div>
 			</div>
 
@@ -329,13 +614,12 @@
 	</main>
 
 	</section>
-	<!-- CONTENT -->
 
 
-	<script src="assets/script/script.js"></script>
 	<script src="assets/script/script.js"></script>
 	<script src="assets/script/modal.js"></script>
-	<script src="script.js"></script>
+	<script src="assets/script/rowcount.js"></script>
+	<script src="assets/script/reportsearch.js"></script>
 </body>
 
 </html>
